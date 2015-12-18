@@ -1,0 +1,87 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Sensorliste">
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Accelerometer Values: "
+            android:padding="10dip" />
+
+        <TextView
+            android:text="[ ]"
+            android:id="@+id/accvalueInfo"
+            android:padding="10dip" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Rotation Accel. Values:"
+            android:padding="10dip" />
+
+        <TextView
+            android:text="[ ]"
+            android:id="@+id/rotaccvalueInfo"
+            android:padding="10dip" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Gyroscope Values:"
+            android:padding="10dip" />
+
+        <TextView
+            android:text="[ ]"
+            android:id="@+id/gyrovalueInfo"
+            android:padding="10dip" />
+    </TableRow>
+
+        <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Richtungskosinusmatrix:"
+            android:padding="10dip" />
+
+         <TextView
+            android:layout_column="2"
+            android:text="[ ]\n[ ]\n[ ]"
+            android:id="@+id/dcmvalue"
+            android:padding="10dip" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_column="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Calibrate"
+            android:id="@+id/btnCalibrate"
+            android:onClick="ClickBtnCal" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_column="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Show all sensors"
+            android:id="@+id/btnShowSensors"
+            android:onClick="ClickBtnShow" />
+    </TableRow>
+
+</TableLayout>
